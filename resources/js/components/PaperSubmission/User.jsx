@@ -21,7 +21,7 @@ function User() {
 
     const [key,setKey]=useState(null)
     function auth(){
-        fetch('http://127.0.0.1:8001/api/auth',{
+        fetch('https://admin.conference.hub-fintech-ncku.tw/api/auth',{
             method:'GET',
             headers: {
                 'Authorization': cookie.get('token'),
@@ -58,7 +58,7 @@ function User() {
     return (
         <Layout style={{minHeight:'100vh'}}>
         <Sider style={siderStyle} trigger={null} collapsible collapsed={collapsed}>
-            <a href='/submission'><img style={{width:'100%'}} className='p-3' src='https://academy.hub-fintech-ncku.tw/assets/logo/academy.png' /></a>
+            <a href='/submission'><img style={{width:'100%'}} className='p-3' src='/assets/logo/fintech.png' /></a>
             <Menu theme="dark" mode="inline" defaultSelectedKeys={[key]}
                 items={[
                   { key: '0', icon: <UserOutlined />, label: 'Profile', onClick: () => location.href = '/profile' },
@@ -129,7 +129,7 @@ function Main({ user }) {
         data.append('webpage', values.webpage || '');
         data.append('password', values.password);
 
-        fetch('http://127.0.0.1:8001/api/user.update', {
+        fetch('https://admin.conference.hub-fintech-ncku.tw/api/user.update', {
             method: 'POST',
             headers: {
                 'Authorization': cookie.get('token'),
@@ -158,7 +158,7 @@ function Main({ user }) {
 
         let data = new FormData();
         data.append('email', email);
-        fetch('http://127.0.0.1:8001/api/mail.register', { method: 'POST', body: data })
+        fetch('https://admin.conference.hub-fintech-ncku.tw/api/mail.register', { method: 'POST', body: data })
             .then((res) => res.json())
             .then((res) => {
                 if (res.result) {

@@ -24,7 +24,7 @@ function Register() {
     };
 
     function register(file) {
-        fetch('http://127.0.0.1:8001/api/register', { method: 'POST', body: file })
+        fetch('https://admin.conference.hub-fintech-ncku.tw/api/register', { method: 'POST', body: file })
             .then(response => response.json())
             .then(res => {
                 if (res.result) {
@@ -61,7 +61,7 @@ function Register() {
     };
 
     function sendValidate(file) {
-        fetch('http://127.0.0.1:8001/api/mail.register', { method: 'POST', body: file })
+        fetch('https://admin.conference.hub-fintech-ncku.tw/api/mail.register', { method: 'POST', body: file })
             .then(response => response.json())
             .then(res => {
                 if (res.result) {
@@ -77,7 +77,7 @@ function Register() {
                 <div className='text-center mb-5'>
                     <img
                         style={{ maxHeight: '200px' }}
-                        src='https://academy.hub-fintech-ncku.tw/assets/logo/academy.png'
+                        src='/assets/logo/fintech.png'
                     />
                 </div>
                 <Form form={form} onFinish={onFinish} layout="vertical" autoComplete="off">
