@@ -1,15 +1,24 @@
 import { Avatar, Card, Text } from '@mantine/core';
+import { useEffect, useState } from 'react';
 import { Col, Row } from 'react-bootstrap';
 
 function Speaker() {
-    const speaker=[
-        {
-            name:'Jason Potts',
-            title:'Distinguished Professor ,Co-Director,',
-            school:'RMIT Blockchain Innovation Hub RMIT University',
-            img:'/assets/Organizing/Jason-Potts.png'
-        }
-    ]
+    const [speaker,setSpeaker]=useState([])
+    function getSpeaker() {
+        fetch('http://localhost:8001/api/speaker?year=2025&type=keynote', {
+            method: 'GET',
+        })
+        .then((response) => response.json())
+        .then((res) => {
+            if (res.result) {
+                setSpeaker(res.items)
+            }
+        });
+    }
+    
+    useEffect(()=>{
+        getSpeaker()
+    },[])
 
     return (
         <div style={{textAlign: 'justify',backgroundAttachment:'fixed',backgroundSize:'cover',backgroundRepeat:'no-repeat',backgroundImage:'url(https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=80)'}} className='align-items-center' id='keynote-speaker'>

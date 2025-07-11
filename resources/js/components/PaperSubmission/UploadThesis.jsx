@@ -154,7 +154,7 @@ function Main({user}) {
                 setLoading(false)
             }
         });
-  }
+    }
 
     function copyYouself(field){
         form.setFieldsValue({

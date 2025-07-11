@@ -7,7 +7,6 @@ function Cover() {
             <video autoPlay muted loop playsInline  style={{position: "absolute",top: "0",left: "0",width: "100%",height:" 100%",objectFit:'cover',zIndex: "-1"}}>
                 <source src="/assets/video/video.webm" type="video/mp4" />
             </video>
-            
             <div style={{backgroundColor: "rgba(0,0,0,0.5)",height: "100%"}} className="d-flex align-items-center text-light">
                 <div className='px-3' style={{maxWidth:'90%'}}>
                     <div className="title-large">2024</div>
