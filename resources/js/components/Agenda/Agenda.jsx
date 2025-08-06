@@ -1,8 +1,7 @@
 import { Timeline } from '@mantine/core';
-import React, { useState } from 'react';
+import { Card } from 'antd';
+import { useState } from 'react';
 import { Col, Container, Image, Row } from 'react-bootstrap';
-// import { Timeline } from 'rsuite';
-import { Panel } from 'rsuite';
 import Menu from '../Menu';
 
 function Agenda() {
@@ -47,9 +46,9 @@ function Agenda() {
             {/* {agenda==1?(<Time1 result={returnResult} />):null} */}
             <div className="page-section p-3 justify-content-center align-items-center d-flex" id='content' style={{minHeight:'80vh',paddingTop:'120px'}}>
             <Container style={{paddingTop:'200px'}} id='agenda'>
-                <Panel className='text-center'>
+                <Card className='text-center'>
                     <Image fluid style={{maxHeight:'90%'}} src='/assets/img/coming-soon.png' />
-                </Panel>
+                </Card>
             </Container>
             </div>
         </div>

@@ -5,7 +5,7 @@ import { Col, Row } from 'react-bootstrap';
 function Speaker() {
     const [speaker,setSpeaker]=useState([])
     function getSpeaker() {
-        fetch('http://localhost:8001/api/speaker?year=2025&type=keynote', {
+        fetch('https://admin.conference.hub-fintech-ncku.tw/api/speaker?year=2025&type=keynote', {
             method: 'GET',
         })
         .then((response) => response.json())

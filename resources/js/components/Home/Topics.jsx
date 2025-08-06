@@ -4,7 +4,7 @@ import { Col, Image, Row } from 'react-bootstrap';
 function Topics() {
     const [topic,setTopic]=useState([])
     function getTopic() {
-        fetch('http://localhost:8001/api/topic?year=2025', {
+        fetch('https://admin.conference.hub-fintech-ncku.tw/api/topic?year=2025', {
             method: 'GET',
         })
         .then((response) => response.json())

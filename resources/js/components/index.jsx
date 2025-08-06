@@ -2,6 +2,7 @@ import { MantineProvider } from '@mantine/core';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 // import Agenda from './Agenda/Agenda';
+import Agenda from './Agenda/Agenda';
 import Home from './Home/Home';
 import UserRegister from './PaperSubmission/Register';
 import UploadThesis from './PaperSubmission/UploadThesis';
@@ -26,7 +27,7 @@ function Index() {
                 <Route path='/register' element={<UserRegister />} />
                 <Route path='/member.register' element={<Register />} />
                 <Route path='/member.join' element={<Joined />} />
-                {/* <Route path='/agenda' element={<Agenda />} /> */}
+                <Route path='/agenda' element={<Agenda />} />
             </Routes>
         </BrowserRouter>
     );

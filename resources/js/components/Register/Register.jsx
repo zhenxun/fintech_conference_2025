@@ -8,7 +8,7 @@ function Register() {
     const cookie=new Cookies()
     const [user,setUser]=useState(null)
     function auth(){
-        fetch('http://localhost:8001/api/auth.register',{
+        fetch('https://admin.conference.hub-fintech-ncku.tw/api/auth.register',{
             method:'GET',
             headers: {
                 'Authorization': cookie.get('token'),
@@ -55,7 +55,7 @@ function Register() {
     };
 
     function register(file) {
-        fetch('http://localhost:8001/api/member.register', { method: 'POST', body: file })
+        fetch('https://admin.conference.hub-fintech-ncku.tw/api/member.register', { method: 'POST', body: file })
             .then(response => response.json())
             .then(res => {
                 if (res.result) {
@@ -230,7 +230,7 @@ function Login({result}){
     
     const cookie=new Cookies()
     function login(file){
-        fetch('http://localhost:8001/api/login',{method:'POST',body:file}
+        fetch('https://admin.conference.hub-fintech-ncku.tw/api/login',{method:'POST',body:file}
         ).then(response=>{
             return response.json()
         }).then(res=>{

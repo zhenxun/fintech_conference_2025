@@ -10,7 +10,7 @@ function Joined() {
         searchEmail(data)
     }
     function search(file){
-      fetch('http://localhost:8001/api/member.search',{
+      fetch('https://admin.conference.hub-fintech-ncku.tw/api/member.search',{
         method:'POST',
         body:file,
       }).then(response=>{
@@ -21,7 +21,7 @@ function Joined() {
     }
 
     function searchEmail(file){
-      fetch('http://localhost:8001/api/member.search.email',{
+      fetch('https://admin.conference.hub-fintech-ncku.tw/api/member.search.email',{
         method:'POST',
         body:file,
       }).then(response=>{

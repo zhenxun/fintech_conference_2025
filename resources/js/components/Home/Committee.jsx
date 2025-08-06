@@ -21,7 +21,7 @@ function Committee() {
 function Chair({title,type}){
     const [speaker,setSpeaker]=useState([])
     function getSpeaker() {
-        fetch(`http://localhost:8001/api/speaker?year=2025&type=${type}`, {
+        fetch(`https://admin.conference.hub-fintech-ncku.tw/api/speaker?year=2025&type=${type}`, {
             method: 'GET',
         })
         .then((response) => response.json())
@@ -52,7 +52,7 @@ function Chair({title,type}){
 function CommitteeList({title,type}){
     const [speaker,setSpeaker]=useState([])
     function getSpeaker() {
-        fetch(`http://localhost:8001/api/speaker?year=2025&type=${type}`, {
+        fetch(`https://admin.conference.hub-fintech-ncku.tw/api/speaker?year=2025&type=${type}`, {
             method: 'GET',
         })
         .then((response) => response.json())
