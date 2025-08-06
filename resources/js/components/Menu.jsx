@@ -20,8 +20,8 @@ function Menu({link}) {
                                 Other
                             </a>
                             <ul class="dropdown-menu dropdown-menu-end">
-                                <li><a class="dropdown-item" href="https://annual-event.hub-fintech-ncku.tw">annual event 2024</a></li>
-                                <li><a class="dropdown-item" href='https://forum.2024.hub-fintech-ncku.tw'>Forum 2024</a></li>
+                                <li><a class="dropdown-item" href="https://annual-event.hub-fintech-ncku.tw">Annual Event 2025</a></li>
+                                <li><a class="dropdown-item" href='https://forum.hub-fintech-ncku.tw'>Forum 2025</a></li>
                             </ul>
                         </li>
                     </ul>

@@ -1,4 +1,3 @@
-import React from 'react';
 import Menu from '../Menu';
 import Committee from './Committee';
 import Cover from './Cover';
@@ -6,7 +5,6 @@ import Footer from './Footer';
 import Introduction from './Introduction';
 import Organizers from './Organizers';
 import Registration from './Registration';
-import Speaker from './Speaker';
 import Submission from './Submission';
 import Timeline from './Timeline';
 import Topics from './Topics';
@@ -31,10 +29,12 @@ function Home() {
         },{
             name:'Registration<br/>& Payment',
             href:'#registration'
-        },{
-            name:'Agenda',
-            href:'/agenda'
-        },{
+        }
+        // ,{
+        //     name:'Agenda',
+        //     href:'/agenda'
+        // }
+        ,{
             name:'Contact',
             href:'#contact'
         }
@@ -45,7 +45,7 @@ function Home() {
             <Menu link={link} />
             <Cover />
             <Introduction />
-            <Speaker />
+            {/* <Speaker /> */}
             <Committee />
             <Organizers />
             <Topics />

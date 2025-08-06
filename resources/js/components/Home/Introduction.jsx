@@ -1,4 +1,3 @@
-import React from 'react';
 
 function Introduction() {
     return (
@@ -6,8 +5,8 @@ function Introduction() {
             <div style={{paddingBottom:'100px',paddingTop:'100px'}} className='container'>
                 <h1 style={{fontSize:'6vh',fontWeight:'bolder'}} className='text-center'>Introduction</h1>
                 <div style={{fontSize:'2.5vh'}} className='mt-5 mx-md-5'>
-                    <p>Green FinTech is an emerging and integrated application of financial innovation and sustainability initiatives, with core FinTech technologies including Artificial Intelligence, Blockchain, Big Data Analytics, Cloud Computing, Data Mining, Machine Learning and Mobile Payments (ABCDM technologies). These core technologies have been widely applied in various financial services to provide customers with an innovative and high-quality experience of future financial services. Sustainable development initiatives emphasize environmental friendliness, social responsibility and corporate governance obligations in addition to the pursuit of profits. Green finance and circular economy have become the new significant economic phenomenon. As financial frameworks or ESG financial investment products are introduced gradually by corporations, many research institutes are emphasizing on exploring the correlation between economic activities and environmental performance. Therefore, we believe that it is a good time to address the issues in ESG management and Green FinTech.</p>
-                    <p>The conference aims to summarize the latest progress of FinTech development, review and exchange with practitioners from academic and financial circles, financial industry and pioneers who are interested in green FinTech development, and explore the future research direction to assist the technological upgrading of various industries and to benefit the digital transformation of the industries. We welcome papers which focus on theoretical studies, practical applications, and experimental prototypes, along with survey papers.</p>
+                    <p>Responsible finance is becoming a central theme in both academic research and industry practice, as global financial systems increasingly integrate environmental, social, and governance (ESG) considerations. This evolving landscape reflects a growing emphasis on ethical conduct, long-term value creation, and inclusive financial access. With the rise of ESG-oriented investment frameworks, regulatory developments, and digital innovations, there is an urgent need for rigorous research to examine how financial institutions respond to these shifts and how responsible finance can be effectively embedded in financial theory, policy, and practice.</p>
+                    <p>The 6th International Conference on Responsible Finance and ESG Management 2025 invites scholars, researchers, and doctoral students to submit working papers and research studies that explore these issues from theoretical, empirical, and policy perspectives. We welcome contributions related to ESG performance evaluation, sustainable transition finance frameworks,</p>
                 </div>
             </div>
         </div>

@@ -10,14 +10,14 @@ function Organizers() {
             name:'成功大學 logo',
             src:'/assets/logo/ncku.png'
         },{
-            name:'產學小聯盟 logo',
-            src:'/assets/logo/sfta.webp'
-        },{
             name:'fintech logo',
             src:'/assets/logo/fintech.png'
         },{
             name:'成大管理學院 logo',
             src:'/assets/logo/manage.png'
+        },{
+            name:'產學小聯盟 logo',
+            src:'/assets/logo/sfta.webp'
         }
     ]
     const isMobile = useMediaQuery({ maxWidth: 768 });
