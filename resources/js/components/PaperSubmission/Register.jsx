@@ -1,4 +1,4 @@
-import { Button, Divider, Form, Input, Space, Typography, message } from 'antd';
+import { Button, Divider, Form, Input, Typography, message } from 'antd';
 import { useState } from 'react';
 
 const { Title,Link } = Typography;
@@ -85,7 +85,7 @@ function Register() {
                     <Form.Item name="firstname" label="Firstname" rules={[{ required: true, message: 'Required' }]}>
                         <Input />
                     </Form.Item>
-                    <Form.Item name="lastname" label="Lastname">
+                    <Form.Item name="lastname" label="Lastname" rules={[{ required: true, message: 'Required' }]}>
                         <Input />
                     </Form.Item>
                     <Form.Item name="country" label="Country" rules={[{ required: true, message: 'Required' }]}>
@@ -126,14 +126,16 @@ function Register() {
                         <Input.Password />
                     </Form.Item>
                     <Form.Item name="email" label="Email" rules={[{ required: true, message: 'Required' }]}>
-                        <Space.Compact block>
+                        <Input type="email" placeholder='student@example.com' />
+                        
+                        {/* <Space.Compact block>
                             <Input type="email" placeholder='student@example.com' />
                             <Button onClick={() => onValidate(emailValue)} disabled={isDisabled}>
                                 {isDisabled ? `Please wait (${countdown})` : "Send verification code"}
                             </Button>
-                        </Space.Compact>
+                        </Space.Compact> */}
                     </Form.Item>
-                    <Form.Item
+                    {/* <Form.Item
                         name="otp"
                         label="Verification code"
                         rules={[
@@ -146,7 +148,7 @@ function Register() {
                         ]}
                     >
                         <Input.OTP length={4} />
-                    </Form.Item>
+                    </Form.Item> */}
                     <Button className='my-3' size={'large'} type="primary" block htmlType={'submit'}>
                         Register
                     </Button>

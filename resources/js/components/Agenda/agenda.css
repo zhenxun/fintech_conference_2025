@@ -1,0 +1,228 @@
+.agenda-page {
+  background: linear-gradient(180deg, #040c1d 0%, #0b1f3a 45%, #f4f7fb 100%);
+}
+
+.agenda-hero {
+  padding: 160px 0 90px;
+  background: radial-gradient(circle at top, rgba(255, 255, 255, 0.12), transparent 60%);
+}
+
+.agenda-overline {
+  letter-spacing: 0.18em;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.agenda-title {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.agenda-subtitle {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.8);
+  margin-bottom: 0;
+}
+
+.agenda-wrapper {
+  padding: 80px 0 120px;
+  position: relative;
+  z-index: 2;
+}
+
+.agenda-card {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  border-radius: 24px;
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 25px 60px rgba(15, 23, 42, 0.1);
+  margin-bottom: 1.5rem;
+}
+
+.agenda-time {
+  min-width: 220px;
+  background: linear-gradient(135deg, #0e4d92, #1b79c3);
+  color: #fff;
+  border-radius: 18px;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.35rem;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.2);
+}
+
+.agenda-slot {
+  font-size: 1.15rem;
+  font-weight: 600;
+}
+
+.agenda-note {
+  font-size: 0.95rem;
+  opacity: 0.85;
+}
+
+.agenda-session-grid {
+  flex: 1;
+  display: grid;
+  gap: 1.25rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.session-card {
+  border-radius: 20px !important;
+  background: #ffffff;
+  border: 1px solid rgba(15, 23, 42, 0.05);
+  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.08);
+}
+
+.session-card--break {
+  background: linear-gradient(135deg, #fff6ec, #ffe7d1);
+  border: 1px solid rgba(255, 153, 102, 0.3);
+  box-shadow: none;
+}
+
+.session-tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.3rem 0.8rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  background: rgba(14, 77, 146, 0.1);
+  color: #0e4d92;
+  margin-bottom: 0.75rem;
+}
+
+.session-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  color: #0f172a;
+}
+
+.session-subtitle {
+  font-size: 0.95rem;
+  color: #475569;
+  margin-bottom: 0.75rem;
+}
+
+.session-description {
+  font-size: 0.95rem;
+  color: #475569;
+  margin-bottom: 0.75rem;
+}
+
+.session-topics {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 0.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.session-topics li {
+  display: flex;
+  gap: 0.5rem;
+  align-items: baseline;
+}
+
+.session-topic-label {
+  font-weight: 600;
+  color: #0e4d92;
+  min-width: 70px;
+}
+
+.session-topic-text {
+  color: #1f2937;
+}
+
+.session-speakers {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.speaker-row {
+  display: grid;
+  grid-template-columns: 130px 1fr;
+  gap: 0.75rem;
+  padding: 0.65rem 0;
+  border-top: 1px solid rgba(15, 23, 42, 0.08);
+}
+
+.speaker-row:first-child {
+  border-top: none;
+  padding-top: 0;
+}
+
+.speaker-info {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.speaker-avatar {
+  width: 52px;
+  height: 52px;
+  min-width: 52px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid rgba(14, 77, 146, 0.2);
+  box-shadow: 0 8px 20px rgba(15, 23, 42, 0.1);
+}
+
+.speaker-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.speaker-role {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #475569;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.speaker-name {
+  font-weight: 600;
+  color: #0f172a;
+  margin-bottom: 0.1rem;
+}
+
+.speaker-affiliation {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #475569;
+}
+
+@media (max-width: 768px) {
+  .agenda-hero {
+    padding-top: 120px;
+  }
+
+  .agenda-card {
+    padding: 1.25rem;
+  }
+
+  .agenda-time {
+    width: 100%;
+  }
+
+  .speaker-row {
+    grid-template-columns: 1fr;
+  }
+
+  .speaker-info {
+    align-items: flex-start;
+  }
+}

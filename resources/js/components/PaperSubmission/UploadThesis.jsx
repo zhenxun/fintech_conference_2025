@@ -121,6 +121,11 @@ function Main({user}) {
             formData.append(`authors[${idx}][isCorresponding]`, author.isCorresponding ? 'true' : 'false');
         });
 
+        if (!values.authors || !values.authors.some(author => author.isCorresponding)) {
+            message.error('At least one corresponding author is required');
+            return false;
+        }
+
         const coverFile = values.cover?.[0]?.originFileObj;
         const paperFile = values.paper?.[0]?.originFileObj;
 

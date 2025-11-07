@@ -10,6 +10,7 @@ function Registration() {
                 <div className='text-center my-5'>
                     <Button style={{minWidth:'230px'}} size="xl" radius="xl" onClick={()=>window.location.href='/member.register'}>
                         Register Now
+                        {/* Registration Closed */}
                     </Button>
                 </div>
             </div>

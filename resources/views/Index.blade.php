@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}" >
     <head>
-        <title>The 5th International Conference on Sustainable FinTech and Supply Chain Management</title>
+        <title>The 6th International Conference on Responsible Finance and ESG Management</title>
         <meta charset="utf-8">
         <link rel="icon" type="image/x-icon" href="https://forum.2023.hub-fintech-ncku.tw/assets/logo/new-fintech-logo.png">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">

@@ -18,7 +18,7 @@ function Submission() {
                             <li key={i}><div dangerouslySetInnerHTML={{__html:item}} /></li>
                         ))}
                     </ul>
-                    <div className='pb-3' style={{textAlign:"justify"}}>RFESG 2025 features a special publication model for authors to expand their conference works to high quality journal publications and books following the conference. Submitted papers will be carefully evaluated based on originality, importance, technical soundness, presentation, and clarity of exposition. Following the standard process of a double-blind review, the selected papers will have an opportunity to be published in a leading journal. More details can be found on the conference website.</div>
+                    <div className='pb-3' style={{textAlign:"justify"}}>RFESG 2025 features a special publication model for authors to expand their conference works to high quality journal publications and books following the conference. Submitted papers will be carefully evaluated based on originality, importance, technical soundness, presentation, and clarity of exposition. Following the standard process of a double-blind review, the selected papers will have an opportunity to be published in Asia Pacific Management Review, APMR (ESCI). More details can be found on the conference website.</div>
                     <div className='justify-content-center d-flex py-3'>
                         <div style={{width:'25%'}}><img className='img-fluid' src='/assets/logo/APMR_logo_revised.png' /></div>
                     </div>

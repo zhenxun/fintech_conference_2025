@@ -29,12 +29,10 @@ function Home() {
         },{
             name:'Registration<br/>& Payment',
             href:'#registration'
-        }
-        // ,{
-        //     name:'Agenda',
-        //     href:'/agenda'
-        // }
-        ,{
+        },{
+            name:'Agenda',
+            href:'/agenda'
+        },{
             name:'Contact',
             href:'#contact'
         }

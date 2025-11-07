@@ -25,7 +25,7 @@ function Topics() {
                 <h1 style={{fontSize:'6vh',fontWeight:'bolder'}} className='text-center'>Topics of Interests</h1>
                 <div style={{fontSize:'2.5vh'}} className='mt-5 mx-md-5'>
                     <div className='text-center'>
-                        <Image style={{maxHeight:'700px'}} fluid src='/assets/img/ESGFT2024.png' />
+                        <Image style={{maxHeight:'700px'}} fluid src='/assets/img/ESGFT2024.jpg' />
                     </div>
                     <p className='mt-5'>Authors are asked to submit articles describing research results, projects, survey work, industrial experience, and creative ideas that elaborate significant advances in the following areas:</p>
                     <Row className='mt-3' as={'ul'}>

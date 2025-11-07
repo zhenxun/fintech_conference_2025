@@ -118,8 +118,8 @@ function Main({user}) {
 
     function JsontoArray(item){
         let authors=JSON.parse(item)
-        const correspondingAuthors = authors.filter(a => a.isCorresponding=="true");
-        console.log(correspondingAuthors[0]);
+        const correspondingAuthors = authors.filter(a => a.isCorresponding=="true" || a.isCorresponding===true);
+        if(correspondingAuthors.length===0) return 'No corresponding author'
         return correspondingAuthors[0].lastName+' '+correspondingAuthors[0].firstName
     }
 
@@ -137,7 +137,7 @@ function Main({user}) {
                 <Column className='text-center' title="Year" dataIndex="year" key="year" />
                 <Column className='text-center' title="Title" dataIndex="title" key="title" />
                 <Column className='text-center' title="Corresponding author" dataIndex="author" key="author" render={(item)=>JsontoArray(item)} />
-                <Column className='text-center' title="State" dataIndex="state" key="state" />
+                <Column className='text-center' title="Status" dataIndex="state" key="state" />
             </Table>
         </>
     );
