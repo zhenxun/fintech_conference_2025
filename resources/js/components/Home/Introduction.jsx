@@ -1,5 +1,18 @@
 
 function Introduction() {
+    const featuredSpeakers = [
+        {
+            name: 'Dr. Christian Upper',
+            role: 'Keynote Speaker',
+            image: '/assets/agenda/ChristianUpper.jpg',
+        },
+        {
+            name: 'Dr. Naoyuki Yoshino',
+            role: 'Keynote Speaker',
+            image: '/assets/agenda/NaoyukiYoshino.png',
+        },
+    ];
+
     return (
         <div style={{textAlign: 'justify'}} className='align-items-center bg-light' id='introduction'>
             <div style={{paddingBottom:'100px',paddingTop:'100px'}} className='container'>
@@ -7,6 +20,37 @@ function Introduction() {
                 <div style={{fontSize:'2.5vh'}} className='mt-5 mx-md-5'>
                     <p>Responsible finance is becoming a central theme in both academic research and industry practice, as global financial systems increasingly integrate environmental, social, and governance (ESG) considerations. This evolving landscape reflects a growing emphasis on ethical conduct, long-term value creation, and inclusive financial access. With the rise of ESG-oriented investment frameworks, regulatory developments, and digital innovations, there is an urgent need for rigorous research to examine how financial institutions respond to these shifts and how responsible finance can be effectively embedded in financial theory, policy, and practice.</p>
                     <p>The 6th International Conference on Responsible Finance and ESG Management 2025 invites scholars, researchers, and doctoral students to submit working papers and research studies that explore these issues from theoretical, empirical, and policy perspectives. We welcome contributions related to ESG performance evaluation, sustainable finance frameworks, inclusive banking strategies, ethical investment approaches, and the broader role of financial systems in advancing sustainability and social responsibility, along with other ESG management related topics.</p>
+                </div>
+                <div className='mt-5'>
+                    <h2 className='text-center' style={{fontSize:'4vh', fontWeight:'bold'}}>Featured Speakers</h2>
+                    <div className='row justify-content-center mt-4 g-4'>
+                        {featuredSpeakers.map((speaker) => (
+                            <div key={speaker.name} className='col-12 col-md-5'>
+                                <div
+                                    className='p-4 bg-white h-100 d-flex flex-column align-items-center text-center'
+                                    style={{borderRadius:'20px', boxShadow:'0 15px 35px rgba(0,0,0,0.08)'}}
+                                >
+                                    <div
+                                        style={{
+                                            width:'220px',
+                                            height:'220px',
+                                            borderRadius:'50%',
+                                            overflow:'hidden',
+                                            boxShadow:'0 10px 25px rgba(0,0,0,0.12)',
+                                        }}
+                                    >
+                                        <img
+                                            src={speaker.image}
+                                            alt={`${speaker.name} portrait`}
+                                            style={{width:'100%', height:'100%', objectFit:'cover'}}
+                                        />
+                                    </div>
+                                    <p className='mt-4 mb-1' style={{fontSize:'2.4vh', fontWeight:'600'}}>{speaker.name}</p>
+                                    <p style={{fontSize:'2vh', color:'#6c757d'}}>{speaker.role}</p>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
                 </div>
             </div>
         </div>
