@@ -3,12 +3,12 @@ function Introduction() {
     const featuredSpeakers = [
         {
             name: 'Dr. Christian Upper',
-            role: 'Keynote Speaker',
+            role: 'Senior Adviser, Representative Office for the Americas (EFTA), Bank for International Settlements (BIS)',
             image: '/assets/agenda/ChristianUpper.jpg',
         },
         {
             name: 'Dr. Naoyuki Yoshino',
-            role: 'Keynote Speaker',
+            role: 'Professor Emeritus, Keio University Chief Advisor, Financial Research Center, Financial Services Agency (FSA), Government of Japan',
             image: '/assets/agenda/NaoyukiYoshino.png',
         },
     ];

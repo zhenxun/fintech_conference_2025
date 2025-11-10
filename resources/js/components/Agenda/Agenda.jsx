@@ -41,7 +41,7 @@ const navigationLinks = [
 const agendaData = [
     {
         time: '08:30 – 08:50',
-        note: '全英線上',
+        note: '',
         sessions: [
             {
                 title: 'Guest Check-in',
@@ -52,7 +52,7 @@ const agendaData = [
     },
     {
         time: '08:50 – 09:00',
-        note: '全英線上',
+        note: '',
         sessions: [
             {
                 title: 'Opening Remarks',
@@ -60,14 +60,10 @@ const agendaData = [
                 speakers: [
                     {
                         role: 'Speaker',
-                        name: 'Dr. Meng-Ru Shen',
-                        affiliation: 'President, National Cheng Kung University',
-                    },
-                    {
-                        role: 'Speaker',
                         name: 'Dr. Yeu-Shiang Huang',
                         affiliation:
                             'Dean, College of Management at NCKU & Director, Center for Innovative FinTech Business Models',
+                        avatar: '/assets/agenda/1-0：黃宇翔.png',
                     },
                 ],
             },
@@ -75,7 +71,7 @@ const agendaData = [
     },
     {
         time: '09:00 – 09:30',
-        note: '全英線上',
+        note: '',
         sessions: [
             {
                 title: 'Keynote Speech (1)',
@@ -101,7 +97,7 @@ const agendaData = [
     },
     {
         time: '09:30 – 09:45',
-        note: '全英線上',
+        note: '',
         sessions: [
             {
                 title: 'Coffee and Tea Break',
@@ -113,7 +109,7 @@ const agendaData = [
     },
     {
         time: '09:45 – 10:30',
-        note: '全英線上',
+        note: '',
         sessions: [
             {
                 title: 'Keynote Speech (2)',
@@ -131,7 +127,7 @@ const agendaData = [
                         role: 'Keynote Speaker',
                         name: 'Dr. Naoyuki Yoshino',
                         affiliation:
-                            'Professor Emeritus, Keio University & Former Dean and CEO, Asian Development Bank Institute (ADBI)',
+                            'Professor Emeritus, Keio University Chief Advisor, Financial Research Center, Financial Services Agency (FSA), Government of Japan',
                         avatar: '/assets/agenda/NaoyukiYoshino.png',
                     },
                 ],
@@ -140,7 +136,7 @@ const agendaData = [
     },
     {
         time: '10:30 – 11:00',
-        note: '全英線上',
+        note: '',
         sessions: [
             {
                 title: 'Coffee and Tea Break',
@@ -152,7 +148,7 @@ const agendaData = [
     },
     {
         time: '11:00 – 12:10',
-        note: '全英線上',
+        note: '',
         sessions: [
             {
                 title: 'Net-Zero and Capital Market Efficiency Session',
@@ -161,7 +157,7 @@ const agendaData = [
                     {
                         label: 'Topic 1',
                         description:
-                            "Green Energy Economics and Strategies for Kaohsiung Port's Net-Zero Transition",
+                            'Comparative Analysis of Global Carbon Pricing Mechanism Effectiveness: An Empirical Research Based on Big Data Analysis',
                     },
                     {
                         label: 'Topic 2',
@@ -171,7 +167,7 @@ const agendaData = [
                 speakers: [
                     {
                         role: 'Presenter (1)',
-                        name: 'Szuan-Yi Jiang',
+                        name: 'Chih-Yu Huang',
                         affiliation: 'National Cheng Kung University',
                     },
                     {
@@ -213,7 +209,7 @@ const agendaData = [
     },
     {
         time: '12:10 – 13:30',
-        note: '全英線上',
+        note: '',
         sessions: [
             {
                 title: 'Lunch Break',
@@ -225,7 +221,7 @@ const agendaData = [
     },
     {
         time: '13:30 – 14:40',
-        note: '全英線上',
+        note: '',
         sessions: [
             {
                 title: 'FinTech Application Session I',
@@ -260,7 +256,7 @@ const agendaData = [
                     {
                         label: 'Topic 1',
                         description:
-                            'Comparative Analysis of Global Carbon Pricing Mechanism Effectiveness: An Empirical Research Based on Big Data Analysis',
+                            "Green Energy Economics and Strategies for Kaohsiung Port's Net-Zero Transition",
                     },
                     {
                         label: 'Topic 2',
@@ -271,7 +267,7 @@ const agendaData = [
                 speakers: [
                     {
                         role: 'Presenter (1)',
-                        name: 'Chih-Yu Huang',
+                        name: 'Szuan-Yi Jiang',
                         affiliation: 'National Cheng Kung University',
                     },
                     {
@@ -285,7 +281,7 @@ const agendaData = [
     },
     {
         time: '14:00 – 15:30',
-        note: '全英線上',
+        note: '',
         sessions: [
             {
                 title: 'International Trends and Prospects Online Forum of Responsible Finance',
@@ -339,7 +335,7 @@ const agendaData = [
     },
     {
         time: '15:30 – 17:10',
-        note: '全英線上',
+        note: '',
         sessions: [
             {
                 title: 'Labor Economics Session',
@@ -382,7 +378,7 @@ const agendaData = [
     },
     {
         time: '16:00 – 17:10',
-        note: '全英線上',
+        note: '',
         sessions: [
             {
                 title: 'FinTech Application Session II',
@@ -443,7 +439,7 @@ const agendaData = [
     },
     {
         time: '17:10 – 17:15',
-        note: '全英線上',
+        note: '',
         sessions: [
             {
                 title: 'Closing Remarks',
@@ -461,10 +457,10 @@ function Agenda() {
             <section className='agenda-hero text-center text-light'>
                 <Container>
                     <p className='agenda-overline'>
-                        2025 The 6th International Conference on Responsible Finance and ESG Management
+                        Center for Innovative FinTech Business Models, NCKU
                     </p>
-                    <h1 className='agenda-title'>2025 Center for Innovative FinTech Business Models, NCKU</h1>
-                    <p className='agenda-subtitle'>Detailed agenda for the virtual program</p>
+                    <h1 className='agenda-title'>The 6th INTERNATIONAL CONFERENCE ON RESPONSIBLE FINANCE AND ESG MANAGEMENT 2025</h1>
+                    <p className='agenda-subtitle'>Agenda</p>
                 </Container>
             </section>
             <Container id='agenda' className='agenda-wrapper'>
