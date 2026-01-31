@@ -290,7 +290,7 @@ const agendaData = [
                 topics: [
                     {
                         label: 'Topic 1',
-                        description: 'A Case Study of Insurtech Company (AIFT) in Hong Kong',
+                        description: 'Digital Assets Insurance',
                     },
                     {
                         label: 'Topic 2',
@@ -299,7 +299,7 @@ const agendaData = [
                     {
                         label: 'Topic 3',
                         description:
-                            'The role of the UK and the City of London in advancing Sustainable Finance with a focus on Transition Finance',
+                            'The Role of the UK and the City of London in Advancing Climate & Sustainable Finance',
                     },
                 ],
                 speakers: [

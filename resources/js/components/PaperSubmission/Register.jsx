@@ -149,8 +149,8 @@ function Register() {
                     >
                         <Input.OTP length={4} />
                     </Form.Item> */}
-                    <Button className='my-3' size={'large'} type="primary" block htmlType={'submit'}>
-                        Register
+                    <Button className='my-3' disabled size={'large'} type="primary" block htmlType={'submit'}>
+                        Register Closed
                     </Button>
                 </Form>
                 <div className='text-center'><Link href='/login'>Already registered?</Link></div>

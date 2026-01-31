@@ -40,9 +40,9 @@ function UserLogin() {
                     <Form.Item rules={[{required:true,message:'Required'}]} name="password" label="Password">
                         <Input type='password' id='password' />
                     </Form.Item>
-                    <Button className='my-3' size={'large'} type="primary" block htmlType={'submit'}>Login</Button>
+                    <Button className='my-3' disabled size={'large'} type="primary" block htmlType={'submit'}>Login Closed</Button>
                 </Form>
-                <div className='text-center'><Link href='/register'>Create an account</Link></div>
+                <div className='text-center'><Link href='/register' disabled>Create an account</Link></div>
 
             </Typography>
         </div>
